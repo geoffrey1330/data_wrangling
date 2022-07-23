@@ -1,0 +1,88 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "normalized.csv",
+      "path": "https://github.com/geoffrey1330/data_wrangling/blob/main/src/data/normalized.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Country",
+            "type": "string",
+            "format": "default",
+            "title": "Country"
+          },
+          {
+            "name": "Year",
+            "type": "integer",
+            "format": "default",
+            "title": "Year"
+          },
+          {
+            "name": "Area",
+            "type": "number",
+            "format": "default",
+            "title": "Area"
+          },
+          {
+            "name": "Population",
+            "type": "integer",
+            "format": "default",
+            "title": "Population"
+          },
+          {
+            "name": "GDP per capita",
+            "type": "integer",
+            "format": "default",
+            "title": "GDP per capita"
+          },
+          {
+            "name": "Population density",
+            "type": "integer",
+            "format": "default",
+            "title": "Population density"
+          },
+          {
+            "name": "Vehicle ownership",
+            "type": "integer",
+            "format": "default",
+            "title": "Vehicle ownership"
+          },
+          {
+            "name": "Total road deaths",
+            "type": "integer",
+            "format": "default",
+            "title": "Total road deaths"
+          },
+          {
+            "name": "Road deaths per Million Inhabitants",
+            "type": "integer",
+            "format": "default",
+            "title": "Road deaths per Million Inhabitants"
+          }
+        ]
+      },
+      "title": "normalized_data",
+      "format": "csv",
+      "description": "The result of the normalized data wrangling challenge."
+    }
+  ],
+  "name": "european_union_road_safety_facts_and_figures",
+  "title": "European Union Road Safety Facts and Figures",
+  "description": "A collection of scrapped data from Wikipedia on European Union Road Safety Facts and Figures and clean data result datasets.",
+  "homepage": "https://github.com/geoffrey1330/data_wrangling",
+  "version": "1.0.0",
+  "licenses": [
+    {
+      "path": "https://github.com/geoffrey1330/data_wrangling/blob/main/LICENSE",
+      "title": "MIT"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Geoffrey Israel",
+      "role": "author"
+    }
+  ]
+}
