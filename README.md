@@ -2,7 +2,7 @@
 Script to get normalized CSV data file of Road Safety Facts and Figures in the EU on Table [https://en.wikipedia.org/wiki/Road_safety_in_Europe](https://en.wikipedia.org/wiki/Road_safety_in_Europe)
 
 ## Getting Started
-To use this project locally [python](https://www.python.org/downloads/)  needs to installed.
+To use this project locally [python](https://www.python.org/downloads/)  needs to be installed.
 
 1. **Clone the repository:**
     ```
