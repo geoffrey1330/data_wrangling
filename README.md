@@ -1,5 +1,5 @@
 # Data Wrangling Challenge 
-Script to get normalized CSV data file of Road Safety Facts and Figures in the EU
+Script to get normalized CSV data file of Road Safety Facts and Figures in the EU on Table [https://en.wikipedia.org/wiki/Road_safety_in_Europe](https://en.wikipedia.org/wiki/Road_safety_in_Europe)
 
 ## Getting Started
 To use this project locally [python](https://www.python.org/downloads/)  needs to installed.
@@ -25,3 +25,6 @@ To use this project locally [python](https://www.python.org/downloads/)  needs t
     ```
     python src/script/main.py
     ```
+
+## Data Package 
+The Tabular Data Package (datapackage.json) is located [Here](https://github.com/geoffrey1330/data_wrangling/blob/main/src/datapackage.json).

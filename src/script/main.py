@@ -58,10 +58,10 @@ def data_wrangler():
     df.insert(1, 'Year', 2018)
     
 
-    #Correct cell in GDP per capita Column from '11,500+a' to '11500'
+    # Correct irregular cell in GDP per capita Column from '11,500+a' to '11500'
     df['GDP per capita'] = df['GDP per capita'].map(lambda x: int(''.join(filter(str.isdigit, x))))
     
-    # Correct cell in Population Column from '82.792,351' to '82792351'
+    # Correct irregular cell in Population Column from '82.792,351' to '82792351'
     df['Population'] = df['Population'].map(lambda x: int(''.join(filter(str.isdigit, x))))
     
     # STEP 3
