@@ -14,11 +14,10 @@ To use this project locally [python](https://www.python.org/downloads/)  needs t
     ```
 3. **Setup the virtual environment by running:**
     ```
-    virtualenv env
-    source env/bin/activate 
+    virtualenv venv
+    source venv/bin/activate 
     ```
-    in the project root folder.
-   
+    
 4. **Install External Dependencies:**
     ```
     pip install -r requirements.txt
