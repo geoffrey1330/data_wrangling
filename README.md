@@ -8,14 +8,18 @@ To use this project locally [python](https://www.python.org/downloads/)  needs t
     ```
     git clone -b main https://github.com/geoffrey1330/data_wrangling.git
     ```
-2. **Setup the virtual environment by running:**
+2. **Enter the project directory:**
+    ```
+    cd data_wrangling
+    ```
+3. **Setup the virtual environment by running:**
     ```
     virtualenv env
     source env/bin/activate 
     ```
     in the project root folder.
    
-3. **Install External Dependencies:**
+4. **Install External Dependencies:**
     ```
     pip install -r requirements.txt
     ```
