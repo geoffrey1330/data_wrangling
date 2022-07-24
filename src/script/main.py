@@ -33,10 +33,11 @@ def data_wrangler():
     df = pd.DataFrame(df[0])
 
     # STEP 2
-    # clean dataset (i.e drop unwanted columns & rename columns )
+    # clean dataset (i.e drop unwanted columns & rename columns)
     # Resulting CSV file should only include the following columns: Country, Year, Area, Population, GDP per capita,
     # Population density, Vehicle ownership, Total road deaths, Road deaths per Million Inhabitants.
     # Note that “Year” column value is always 2018.
+    # Correct Cells with irregular data
 
     # drop unwanted columns 
     df = df.drop(["Road Network Length (in km) in 2013[26]", "Number of People Killed per Billion km[27]",
@@ -55,6 +56,13 @@ def data_wrangler():
 
     # Added new column Year with row values of 2018
     df.insert(1, 'Year', 2018)
+    
+
+    #Correct cell in GDP per capita Column from '11,500+a' to '11500'
+    df['GDP per capita'] = df['GDP per capita'].map(lambda x: int(''.join(filter(str.isdigit, x))))
+    
+    # Correct cell in Population Column from '82.792,351' to '82792351'
+    df['Population'] = df['Population'].map(lambda x: int(''.join(filter(str.isdigit, x))))
     
     # STEP 3
     # Data should be sorted by “Road deaths per Million Inhabitants” column.
